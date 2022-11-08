@@ -1,0 +1,214 @@
+:root {
+  --bg-color: #f8f6e6;
+  --primary-color: #29706C;
+  --secondary-color: #EDBF48;
+  --accent-color: #F26440;
+  --text-color: #142b28;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  line-height: 28px;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  padding: 0 3rem;
+  justify-content: space-around;
+}
+.navbar .nav-logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.navbar .nav-logo h1 {
+  font-size: 2em;
+  letter-spacing: 0.02cm;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-family: "Sacramento";
+}
+.navbar .nav-list {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .nav-list li.active {
+  border-left: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.navbar .nav-list li.active a {
+  color: var(--primary-color);
+}
+.navbar .nav-list li {
+  font-size: 1em;
+  font-family: "Barlow";
+  color: black;
+  font-family: "Barlow";
+  text-transform: uppercase;
+}
+.navbar .nav-list li:hover a {
+  color: var(--primary-color);
+}
+.navbar .nav-list li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.6rem 1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.navbar .nav-extras {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.navbar .nav-extras .phone-number {
+  pointer-events: none;
+}
+.navbar .nav-extras li {
+  font-family: "Lato";
+  font-size: 0.8em;
+  padding: 0 0.5em;
+}
+.navbar .nav-extras li a {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+.navbar .nav-extras li a i.bx {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Landing-page */
+.landing-page {
+  width: 100%;
+  height: 90vh;
+  padding: 0 4rem;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+}
+.landing-page .first-sec {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.landing-page .first-sec h1 {
+  width: 40%;
+  position: relative;
+  margin-top: 15%;
+  font-size: 4em;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: "Lato";
+  word-spacing: 0.4cm;
+  letter-spacing: 0.09cm;
+}
+.landing-page .first-sec p {
+  width: 30%;
+  margin-top: 15%;
+  word-spacing: 0.1cm;
+  line-height: 1.4em;
+  font-size: 1em;
+  color: black;
+  font-family: "Lato";
+  box-sizing: content-box;
+}
+.landing-page .second-sec {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  padding: 0;
+}
+.landing-page .second-sec .mail_and_experience {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.landing-page .second-sec .mail_and_experience a {
+  color: var(--accent-color);
+  font-family: "Lato";
+}
+.landing-page .second-sec .mail_and_experience .experience {
+  width: 100%;
+  margin-top: 50%;
+  display: flex;
+  align-items: center;
+}
+.landing-page .second-sec .mail_and_experience .experience .years {
+  font-size: 3.5em;
+  font-family: "Lato";
+  color: var(--text-color);
+}
+.landing-page .second-sec .mail_and_experience .experience .more {
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow";
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+}
+.landing-page .second-sec .vector-img {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  position: relative;
+}
+.landing-page .second-sec .vector-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.landing-page .second-sec .cert {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: auto;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 8%;
+}
+.landing-page .second-sec .cert img {
+  width: 30%;
+}
+.landing-page .second-sec .cert small {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-family: "Lato";
+}/*# sourceMappingURL=style.css.map */
